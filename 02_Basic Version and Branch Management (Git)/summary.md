@@ -1,6 +1,8 @@
 # (2) Basic Version and Branch Management (Git)
 
-## Pull
+### Pull
 ini pull
-## Push
-## Diff
+### Push
+ini push
+### Diff
+ini diff
