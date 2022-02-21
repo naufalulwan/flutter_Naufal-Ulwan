@@ -1,3 +1,2 @@
-<a href="https://github.com/Naufal-Ulwan/latihan">
+Link Repository Basic Version and Branch Management (Git)
 https://github.com/Naufal-Ulwan/latihan
-</a>
