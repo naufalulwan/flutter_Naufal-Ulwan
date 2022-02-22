@@ -34,3 +34,7 @@ Cara membuat branch baru yaitu `git branch (nama branch)` lalu untuk mengecek br
 selanjutnya jika kita ingin menggabungkan setiap commit pada masing masing branch yaitu dengan cara `git merge (nama branch)` tetapi sebelum itu ganti branch kita yang dimana commitannya ingin kita gabungkan oleh commit dari branch lain.
 
 ## Task
+### 1. Membuat 4 branch
+Pada task ini saya membuat 4 branch dengan nama master(default), developer, feature1, dan feature2
+https://github.com/Naufal-Ulwan/latihan/network
+Output : 
