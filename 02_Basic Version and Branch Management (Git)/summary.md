@@ -66,7 +66,7 @@ Output :
 
 ### 4. Hasil merge
 
-![latihan section 2](./screenshots/latihan section 2.png)
+![latihan](/screenshots/LatihanSec2.png)
 
 
 
