@@ -49,24 +49,24 @@ Pada bagian ini saya membuat 4 branch dengan nama master(default), developer, fe
 
 Output :
 
-![image](https://user-images.githubusercontent.com/75620422/155055386-be907677-3717-4e8f-b10f-47c4f8f566e7.png)
+![image](./screenshots/branch.png)
 
 ### 3. Mengimplementasikan instruksi git
 implementasi instruksi git push, pull, stash, dan merge.
 
 Output : 
 
-![image](https://user-images.githubusercontent.com/75620422/155057001-3161ec38-f149-4b41-8975-9427d3c8dea7.png)
+![image](./screenshots/push.png)
 
-![image](https://user-images.githubusercontent.com/75620422/155057134-0200bda0-bf77-4243-b714-21f3f500d467.png)
+![image](./screenshots/pull.png)
 
-![image](https://user-images.githubusercontent.com/75620422/155059606-49f90177-abbc-4e9f-8415-350b8ef3d672.png)
+![image](./screenshots/stash.png)
 
-![image](https://user-images.githubusercontent.com/75620422/155060380-b92555d1-8ea5-4c3e-ae2c-dc623348b311.png)
+![image](./screenshots/merge.png)
 
 ### 4. Hasil merge
 
-![latihan](/screenshots/LatihanSec2.png)
+![latihan section 2](./screenshots/Insight.png)
 
 
 
