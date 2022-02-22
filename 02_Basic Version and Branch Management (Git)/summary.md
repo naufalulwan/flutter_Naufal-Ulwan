@@ -34,7 +34,36 @@ Cara membuat branch baru yaitu `git branch (nama branch)` lalu untuk mengecek br
 selanjutnya jika kita ingin menggabungkan setiap commit pada masing masing branch yaitu dengan cara `git merge (nama branch)` tetapi sebelum itu ganti branch kita yang dimana commitannya ingin kita gabungkan oleh commit dari branch lain.
 
 ## Task
-### 1. Membuat 4 branch
-Pada task ini saya membuat 4 branch dengan nama master(default), developer, feature1, dan feature2
-https://github.com/Naufal-Ulwan/latihan/network
+### 1. Membuat repository
+pertama saya membuat repository-nya melalui github.
+
+https://github.com/Naufal-Ulwan/latihan
+
 Output : 
+
+![image](https://user-images.githubusercontent.com/75620422/155055809-7c9936b1-0df8-4c91-a4b9-5e3c62fb658f.png)
+
+
+### 2. Membuat 4 branch
+Pada bagian ini saya membuat 4 branch dengan nama master(default), developer, feature1, dan feature2.
+
+Output :
+
+![image](https://user-images.githubusercontent.com/75620422/155055386-be907677-3717-4e8f-b10f-47c4f8f566e7.png)
+
+### 3. Mengimplementasikan instruksi git
+implementasi instruksi git push, pull, stash, dan merge.
+
+Output : 
+
+![image](https://user-images.githubusercontent.com/75620422/155057001-3161ec38-f149-4b41-8975-9427d3c8dea7.png)
+
+![image](https://user-images.githubusercontent.com/75620422/155057134-0200bda0-bf77-4243-b714-21f3f500d467.png)
+
+![image](https://user-images.githubusercontent.com/75620422/155059606-49f90177-abbc-4e9f-8415-350b8ef3d672.png)
+
+![image](https://user-images.githubusercontent.com/75620422/155060380-b92555d1-8ea5-4c3e-ae2c-dc623348b311.png)
+
+### 4. Hasil merge
+
+https://github.com/Naufal-Ulwan/latihan/network
