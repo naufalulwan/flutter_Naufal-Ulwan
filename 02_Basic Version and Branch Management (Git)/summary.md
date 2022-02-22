@@ -66,4 +66,6 @@ Output :
 
 ### 4. Hasil merge
 
-https://github.com/Naufal-Ulwan/latihan/network
+![latihan section 2](./screenshots/latihan section 2.png)
+
+
