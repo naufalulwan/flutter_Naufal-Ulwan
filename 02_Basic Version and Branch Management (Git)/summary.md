@@ -66,7 +66,7 @@ Output :
 
 ### 4. Hasil merge
 
-![latihan section 2](https://user-images.githubusercontent.com/75620422/155075662-5dfcdace-4c6e-4675-b1da-022e4c181ed3.png)
+![latihan section 2](./screenshots/latihan section 2.png)
 
 
 
