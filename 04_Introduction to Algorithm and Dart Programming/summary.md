@@ -103,6 +103,7 @@ Void main(){
     [luas_lingkaran.dart](praktikum/luas_lingkaran.dart)
 
     Hasil : 
+
     ![luas_lingkaran](screenshots/hasil%20code%20luas_lingkaran.png)
     ![luas_lingkaran2](screenshots/hasil%20code%20luas_lingkaran2.png)
 
@@ -122,4 +123,5 @@ Void main(){
     [variabel.dart](praktikum/Variabel.dart)
 
     Hasil :
+    
     ![variabel](screenshots/Hasil%20code%20variabel.png) 
