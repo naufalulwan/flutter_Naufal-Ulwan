@@ -179,6 +179,10 @@ Soal :
         }
 
         ```
+        Hasil : 
+
+        ![hasil dari code nomor 1](screenshots/ss%20nomor%201.png)
+
   2. Buatlah list dengan spesifikasi berikut :
 
      - Tiap elementnya berupa list juga
@@ -210,3 +214,7 @@ Soal :
         }
 
       ```
+
+      Hasil : 
+
+      ![Hasil dari code nomor 2](screenshots/ss%20nomor%202.png)
