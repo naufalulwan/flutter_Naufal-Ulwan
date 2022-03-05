@@ -9,8 +9,7 @@ listKali(List list_data, int pengali) async {
   List new_data = [];
 
   for (var item in list_data) {
-    int temp_num = await pengalian(item, pengali);
-    new_data.add(temp_num);
+    new_data.add(await pengalian(item, pengali));
   }
   return new_data;
 }
