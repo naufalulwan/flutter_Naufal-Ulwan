@@ -29,7 +29,7 @@ bool oddEven(int inputs) {
 
 Hasilnya : 
 
-![Screenshots problem 1](screenshots%20problem%201.png)
+![Screenshots problem 1](screenshots/screenshots%20problem%201.png)
 
 
 ### Problem 2 - Azimuth/Back-Azimuth
@@ -62,7 +62,7 @@ int azimuth(int inputs) {
 
 Hasilnya : 
 
-![Screenshots problem 1](screenshots%20problem%202.png)
+![Screenshots problem 2](screenshots/screenshots%20problem%202.png)
 
 ### Problem 3 - Jam Pasir
 Membuat sebuah fungsi yang dapat : 
@@ -95,7 +95,7 @@ void jamPasir(int tinggi) {
 
 Hasilnya : 
 
-![Screenshots problem 1](screenshots%20problem%203.png)
+![Screenshots problem 3](screenshots/screenshots%20problem%203.png)
 
 ### Problem 4 - Diagonal Angka
 Mmebuat sebua fungsi yang dapat : 
@@ -123,4 +123,4 @@ void diagonal(int inputs) {
 
 Hasilnya : 
 
-![Screenshots problem 1](screenshots%20problem%204.png)
+![Screenshots problem 4](screenshots/screenshots%20problem%204.png)
