@@ -7,9 +7,8 @@ void main() {
 }
 
 bool oddEven(int inputs) {
-  if (inputs % 2 == 0) {
+  if (inputs % 2 == 0)
     return true;
-  } else {
+  else
     return false;
-  }
 }
