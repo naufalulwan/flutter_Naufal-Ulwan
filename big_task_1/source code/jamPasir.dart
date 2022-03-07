@@ -11,7 +11,7 @@ void jamPasir(int inputs) {
   for (i = 1; i < 2 * inputs; i++) {
     for (j = 1; j <= inputs; j++) {
       stdout.write(" ");
-      if ((i <= j && i + j < 2 * inputs) || (i + j >= 2 * inputs))
+      if ((i <= j && j < 2 * inputs) || (i + j >= 2 * inputs))
         stdout.write("*");
     }
     print('');
