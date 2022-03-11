@@ -18,8 +18,8 @@ void main() {
     if (mobil.angkut == false) {
       print(mobil.tambahMuatan(hewan.berat));
       stdout.write("Lanjut? (Y/N) : ");
-      String? checkLanjut = stdin.readLineSync();
-      if (checkLanjut?.toUpperCase() != "Y") {
+      String? check = stdin.readLineSync();
+      if (check?.toUpperCase() != "Y") {
         break;
       } else {
         mobil.angkut = true;
@@ -29,18 +29,12 @@ void main() {
 }
 
 class Hewan {
-  // Membuat Constructor pada masing-masing property di kelas Hewan
   Hewan({this.berat = 0});
-
-  // Membuat Getter pada masing-masing property di kelas Hewan
   int berat;
 }
 
 class Mobil {
-  // Membuat Constructor pada masing-masing property di kelas Mobil
   Mobil({this.kapasitas = 100, this.muatan, this.angkut = true});
-
-  // Membuat Getter pada masing-masing property di kelas Mobil
   int kapasitas;
   List? muatan;
   bool angkut;
@@ -54,7 +48,7 @@ class Mobil {
       return "Kapasitas kepenuhan!";
     } else if (berat <= 0) {
       angkut = false;
-      return "Ga jelas";
+      return "Ga bisa mines";
     } else {
       tempMuatan.add(berat);
       angkut = true;
