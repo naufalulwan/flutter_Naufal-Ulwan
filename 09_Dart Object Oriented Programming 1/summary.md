@@ -1,9 +1,9 @@
 # (9) Dart Object Oriented Programming 1
 
 Poin yang saya pelajari dari materi ini adalah
-- Pengertian class
-- Cara membuat method, property
-- Cara memanggil class beserta method, dan property
+    - Pengertian class
+    - Cara membuat method, property
+    - Cara memanggil class beserta method, dan property
 
 ## Resume
 
@@ -35,6 +35,7 @@ Cara memanggil class yaitu `var i = nama();` atau bisa juga dengan `nama i = nam
 Pemanggilan class sangat fleksibel bisa antar class ataupun antar fungsi, dan juga bisa dipanggil berkali-kali.
 
 ## Task 
+
 
 Source code : [tugas oop 1](praktikum/Task%201.dart)
 

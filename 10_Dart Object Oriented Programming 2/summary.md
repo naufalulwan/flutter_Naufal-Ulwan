@@ -50,6 +50,9 @@ class class_name {
 
 ## Task
 
+
+### Task No. 1 dan No. 2
+
 Source code : [Tugas Praktikum OOP 2](praktikum/task%201.dart)
 
 Membuat sebuah kelas dengan nama BangunRuang, yang memiliki property yaitu panjang, lebar, tinggi dengan metode konstruktor, lalu membuat metode volume() didalam kelas BangunRuang
@@ -59,3 +62,5 @@ Selanjutnya membuat kelas dengan nama Kubus, dan Balok. yang dimana kedua kelas 
 selanjutnya menampilkan hasil dari kelas kubus dan kelas balok di fungsi main, lalu memasukan nilai ke object tersebut.
 
 Hasilnya : [Hasil tugas OOP 2](screenshots/ss%20tugas%20task%201%20no%201,%202.png)
+
+### Task No. 3 dan No. 4
