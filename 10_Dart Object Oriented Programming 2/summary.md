@@ -64,3 +64,12 @@ selanjutnya menampilkan hasil dari kelas kubus dan kelas balok di fungsi main, l
 Hasilnya : [Hasil tugas OOP 2](screenshots/ss%20tugas%20task%201%20no%201,%202.png)
 
 ### Task No. 3 dan No. 4
+
+Source code : [Tugas Praktikum OOP 2 No.3 dan 4](praktikum/Implements.dart)
+              [class Matematika](praktikum/class_Matematika.dart)
+              [class fpb](praktikum/class_fpb.dart)
+              [class kpk](praktikum/class_kpk.dart)
+
+Membuat sebuah program dengan menghitung operasi matematika yaitu faktor persekutuan terbesar dan kelipatan persekutuan terkecil. Disini saya mengerjakan dengan berbeda class yang dimana class kpk dan class fpb diimplementasikan kedalam class matematika, dan menaruh codenya di method hasil untuk menampilkan data juga. Rumus pada kedua class tersebut saya gabungkan dengan menggunakan looping do-while.
+
+Hasilnya : [Hasil tugas OOP 2 No.3 dan 4](screenshots/ss%20tugas%20task%201%20no%203,%204.png)
