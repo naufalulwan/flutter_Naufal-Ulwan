@@ -1,46 +1,50 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
+import 'package:number1/page_1/my_app.dart';
 
-void main() => runApp(MyHome());
+void main() => runApp(MyApp());
 
-class MyHome extends StatefulWidget {
-  const MyHome({Key? key}) : super(key: key);
+// Task No.1
 
-  @override
-  State<MyHome> createState() => _MyHomeState();
-}
+// void main() => runApp(MyHome());
 
-class _MyHomeState extends State<MyHome> {
-  var time = 'Clock';
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Widget Flutter"),
-          backgroundColor: Colors.purple,
-        ),
-        body: Center(
-          child: Text(
-            time,
-            style: const TextStyle(fontSize: 42),
-          ),
-        ),
-      ),
-    );
-  }
+// class MyHome extends StatefulWidget {
+//   const MyHome({Key? key}) : super(key: key);
 
-  void startTime() {
-    Timer.periodic(const Duration(seconds: 1), (_) {
-      var now = DateTime.now();
-      var formatedTime =
-          "${now.hour.toString()}:${now.minute.toString().padLeft(2, '0')}:${now.second.toString().padLeft(2, '0')}";
-      setState(() {
-        time = formatedTime;
-      });
-    });
-  }
+//   @override
+//   State<MyHome> createState() => _MyHomeState();
+// }
 
-  @override
-  void initState() => startTime();
-}
+// class _MyHomeState extends State<MyHome> {
+//   var time = 'Clock';
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text("Widget Flutter"),
+//           backgroundColor: Colors.purple,
+//         ),
+//         body: Center(
+//           child: Text(
+//             time,
+//             style: const TextStyle(fontSize: 42),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+
+//   void startTime() {
+//     Timer.periodic(const Duration(seconds: 1), (_) {
+//       var now = DateTime.now();
+//       var formatedTime =
+//           "${now.hour.toString()}:${now.minute.toString().padLeft(2, '0')}:${now.second.toString().padLeft(2, '0')}";
+//       setState(() {
+//         time = formatedTime;
+//       });
+//     });
+//   }
+
+//   @override
+//   void initState() => startTime();
+// }
