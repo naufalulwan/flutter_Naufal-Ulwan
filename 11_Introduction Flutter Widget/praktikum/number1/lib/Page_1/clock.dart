@@ -32,5 +32,9 @@ class _ClockState extends State<Clock> {
     });
   }
 
-  initState() => startTime();
+  @override
+  void initState() {
+    startTime();
+    super.initState();
+  }
 }
