@@ -47,3 +47,24 @@ GridView.builder(
 ```
 
 ## Task
+
+### No. 1 Membuat tampilan ListView seperti yang ada di soal
+
+Disini saya memakai ListView.bulder, karena di listview tersebut tidak ada garis divider, jadi lebih terlihat simple, dan juga isi kontennya berupa dinamis.
+
+Di aplikasi yang saya buat juga ada fitur tambahan yaitu memakai button untuk mensort kontennya berdasarkan alfabet.
+
+Source Code : [SC ListView](praktikum/flutter_listview/).
+
+Screenshots : [SS ListView](screenshots/List_1.png), [SS ListView](screenshots/List_2.png).
+
+### No.2 Membuat tampilan GridView seperti yang ada di soal
+
+Oiya, yang No.1 dan No.2 ada di satu file dan di folder yang sama, jadi saya memakai fitur change page dengan mentriger navigation barnya.
+
+Disini saya memakai GridView.count, yang dimana letak dari gridnya mudah diatur, karena diaplikasinya saya menambahkan fitur slider agar tata letak dari grid bisa berubah - ubah sesuai dari posisi slidernya.
+
+Source Code : [SC ListView](praktikum/flutter_listview/).
+Noted: Penamaan lupa diganti.
+
+Screenshots : [SS GridView](screenshots/Grid_4x4.png),[SS GridView](screenshots/Grid_6x6.png).
