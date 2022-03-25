@@ -47,3 +47,15 @@ Text(
 ```
 dan fonts berhasil ditambahkan.
 ## Task
+
+Mencari tiga gambar pada google dan saya disini sudah menyiapkan tiga gambar yang ditambahkan ke pubspec.yaml yaitu
+
+- assets/img/connie.jpg
+- assets/img/pixis.jpg
+- assets/img/falco.jpg
+
+lalu setelah itu menampilkan gambar - gambar tersebut ke dalam widget GridView dan jika ditekan gambarnya akan menampilkan halaman baru, dan gambarnya muncul sesuai dengan apa yang ditekan.
+
+Source Code : [SC flutter_widget](praktikum/flutter_assets/)
+
+Screnshots : [SS 1 flutter_widget](screenshots/Screenshot_1648192039.png), [SS 2 flutter_widget](screenshots/Screenshot_1648192046.png), [SS 3 flutter_widget](screenshots/Screenshot_1648192049.png)
