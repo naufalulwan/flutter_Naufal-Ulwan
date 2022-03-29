@@ -24,14 +24,15 @@ class ContactItemCard extends StatelessWidget {
             children: [
               Text(
                 contact.contactName,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 contact.contactTelp,
-                style: TextStyle(fontSize: 14),
+                style: const TextStyle(fontSize: 14),
               ),
             ],
           ),

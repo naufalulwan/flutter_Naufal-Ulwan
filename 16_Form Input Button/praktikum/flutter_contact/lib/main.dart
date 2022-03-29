@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '/models/contact_manager.dart';
 import '/screens/contact_screens.dart';
 import 'package:provider/provider.dart';
-
 void main() {
   runApp(const MyApp());
 }

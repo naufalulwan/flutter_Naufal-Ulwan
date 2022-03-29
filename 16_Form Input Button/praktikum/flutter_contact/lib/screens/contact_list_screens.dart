@@ -21,9 +21,11 @@ class ContactListScreen extends StatelessWidget {
             onPressed: () {
               manager.deleteContact(index);
               Navigator.pop(context);
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text('${item.contactName} Deleted'),
-              ));
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('${item.contactName} Deleted'),
+                ),
+              );
             },
           );
         },

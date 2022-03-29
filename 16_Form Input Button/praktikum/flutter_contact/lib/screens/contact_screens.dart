@@ -36,7 +36,7 @@ class ContactScreen extends StatelessWidget {
   }
 
   Widget buildcontactScreen() {
-    return Consumer<ContactManager>(builder: (context, manager, child) {
+    return Consumer<ContactManager>(builder: (context, manager, _) {
       if (manager.contactModels.isNotEmpty) {
         return ContactListScreen(
           manager: manager,
