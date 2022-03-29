@@ -98,6 +98,11 @@ Jenis folder yaitu :
   
   folder screens disini berupa user interface / tampilan yang dijalankan di aplikasi
 
+  
+Tambahan baru, yaitu menambahkan fitur form valdation yang dimana saya disini menggunakan metode validation manual tanpa parameter validator, disini hanya menggunakan statement yang dimana jika field belum terisi keduanya maka button belum bisa ditekan atau nonaktif, maka field wajib diisi dua - duanya agar button jadi aktif.
+
+Dan juga saya menambahkan fitur input formaters yang dimana menerima data berupa list (inputFormatter) dan menerima children FilteringTextInputFormatter disini berfungsi untuk mengatur inputan agar sesuai dengan apa yang diizinkan atau tidak dizinkan sedangkan saya disini menggunakan method .allow agar mengizinkan data input berdasarkan dari regExp yang diaturnya.
+
 Screenshots : [SS create_page](screenshots/ss%20create_page_telp.png)
 
 Source Code : [SC flutter_contact](praktikum/flutter_contact/)
