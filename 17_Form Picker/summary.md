@@ -19,7 +19,17 @@ Cara membuat date picker ini dengan menggunakan fungsi bawaan flutter yaitu show
 ```
 ### 2. Color Picker
 
+Untuk color picker disini menggunakan package tambahan package flutter_colopicker 1.0.3, linknya bisa diakses disini https://pub.dev/packages/flutter_colorpicker, cara penggunanya cukup simple yaitu menggunaka dialog sebagai warpnya, dan juga membutuh alertdialog juga, dengan child yaitu ColorPicker untuk memanggil color picker.
+
+Dan cara memanggil packagenya yaitu ketik di cmd $ flutter pub add flutter_colorpicker 
+
+di file codingannya tambahkan `import 'package:flutter_colorpicker/flutter_colorpicker.dart'; `
+
 ### 3. File Picker
+
+File picker yaitu kemampuan untuk mengambil segala macam jenis yaitu bisa berformat gambar, text, maupun video. Lalu ditempatkan di extension tambahan yaitu dengan package open_file 3.2.1 agar dapat membuka file yang diambil di file picker.
+
+File picker tersendiri menggunakan package file_picker 4.3.3, cara installnya dan penggunannya bisa diliat di link berikut https://pub.dev/packages/file_picker, karena sudah lengkap dijelaskannya.
 
 ## Task 
 
