@@ -1,0 +1,4 @@
+bagian screen home_page.dart untuk yang listview, dismissible, dan listtile 
+merupakan widget tetapi belum dipisahkan kedalam folder widget karena terlambat mengumpulkannya
+jadi males buat ngepisahin, tapi sudah dijadikan widget tersendiri untuk listview dengan nama 
+view()
