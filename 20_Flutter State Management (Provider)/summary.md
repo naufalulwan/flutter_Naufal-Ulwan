@@ -7,7 +7,7 @@ poin yang saya dapat dari materi ini yaitu :
 
 ## Resume
 
-### 1. Pengertian state
+### 1. Pengertian state 
 
 ### 2. Global state
 
@@ -20,3 +20,4 @@ Source Code : [SC flutter_provider](./praktikum/flutter_provider/)
 
 Screenshots : [SS flutter_provider](./screenshots/)
 
+Untuk pengumpulan tugas sama resume agak telat bang, karena badan lagi ga fit dari hari minggu kemarin, sama komputer rusak di vganya jadi ga bisa nyala, jadi pake laptop hanya saja pas buka emulator ngelag.
