@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_contact_bloc/models/contact_model.dart';
+import 'package:uuid/uuid.dart';
+import '../models/contact_model.dart';
 import '../blocs/contact/contact_bloc.dart';
 import '../widgets/button.dart';
 import '../widgets/input.dart';
-import 'package:uuid/uuid.dart';
 
 class AddPage extends StatefulWidget {
   const AddPage({Key? key}) : super(key: key);
@@ -39,7 +39,7 @@ class _AddPageState extends State<AddPage> {
   String? get _errorTextName {
     final textName = _contactNameController.value.text;
     if (textName.isEmpty) {
-      return 'Can\'t be empty';
+      return 'Cant be empty';
     }
     return null;
   }
@@ -47,7 +47,7 @@ class _AddPageState extends State<AddPage> {
   String? get _errorTextNum {
     final textNum = _contactNumController.value.text;
     if (textNum.isEmpty) {
-      return 'Can\'t be empty';
+      return 'Cant be empty';
     }
     return null;
   }

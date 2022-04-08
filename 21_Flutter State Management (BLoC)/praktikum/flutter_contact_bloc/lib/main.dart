@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../blocs/contact/contact_bloc.dart';
-import 'blocs/themes/theme_bloc.dart';
-import 'screens/home_page.dart';
+import '../blocs/themes/theme_bloc.dart';
+import '../screens/home_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,15 +20,12 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => ContactBloc()),
         BlocProvider(create: (context) => ThemeBloc()),
       ],
-      child: BlocProvider(
-        create: (BuildContext context) => ThemeBloc(),
-        child: BlocBuilder<ThemeBloc, bool>(
-          builder: (context, state) => MaterialApp(
-            debugShowCheckedModeBanner: false,
-            title: 'Aplikasi flutter provider',
-            theme: state ? dark : light,
-            home: HomePage(),
-          ),
+      child: BlocBuilder<ThemeBloc, bool>(
+        builder: (context, state) => MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Aplikasi flutter provider',
+          theme: state ? dark : light,
+          home: HomePage(),
         ),
       ),
     );

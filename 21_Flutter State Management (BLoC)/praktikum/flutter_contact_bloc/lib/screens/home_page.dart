@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../blocs/contact/contact_bloc.dart';
 import '../blocs/themes/theme_bloc.dart';
-import '../models/contact_model.dart';
-import 'add_page.dart';
+import './add_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,11 +13,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
-  void initState() {
-    context.read<ContactBloc>().add(OnFetchContact());
-    super.initState();
-  }
-
   bool isDescending = false;
   @override
   Widget build(BuildContext context) {
@@ -68,11 +62,7 @@ class _HomePageState extends State<HomePage> {
         Expanded(
           child: BlocBuilder<ContactBloc, ContactState>(
             builder: (context, state) {
-              if (state is ContactLoading) {
-                return const Center(
-                  child: CircularProgressIndicator(),
-                );
-              } else if (state is ContactLoaded) {
+              if (state is ContactLoaded) {
                 return ListView.builder(
                     itemCount: state.contact.length,
                     itemBuilder: ((context, index) {

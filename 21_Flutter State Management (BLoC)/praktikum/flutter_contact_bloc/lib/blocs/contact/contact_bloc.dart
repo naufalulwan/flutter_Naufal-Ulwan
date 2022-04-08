@@ -22,10 +22,5 @@ class ContactBloc extends Bloc<ContactEvent, ContactState> {
         emit(ContactLoaded(listContact));
       }
     });
-
-    on<OnFetchContact>((event, emit) async {
-      emit(ContactLoading());
-      emit(ContactLoaded(listContact));
-    });
   }
 }
