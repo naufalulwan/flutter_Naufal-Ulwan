@@ -9,6 +9,8 @@ poin yang saya dapat dari materi ini yaitu :
 
 ### 1. Pengertian state 
 
+
+
 ### 2. Global state
 
 ### 3. Provider
