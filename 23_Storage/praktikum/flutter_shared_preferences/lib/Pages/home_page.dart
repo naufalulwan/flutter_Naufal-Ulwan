@@ -45,15 +45,15 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         leading: null,
         actions: <Widget>[
-          // Consumer<ContactProvider>(
-          //   builder: (context, contacts, _) => IconButton(
-          //     icon: const Icon(
-          //       Icons.delete_sweep,
-          //       color: Colors.black45,
-          //     ),
-          //     onPressed: () {},
-          //   ),
-          // ),
+          Consumer<ContactProvider>(
+            builder: (context, contacts, _) => IconButton(
+              icon: const Icon(
+                Icons.delete_sweep,
+                color: Colors.black45,
+              ),
+              onPressed: () {},
+            ),
+          ),
           IconButton(
             splashRadius: 25,
             icon: const Icon(
@@ -97,8 +97,8 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => AddCardPage()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => AddContactPage()));
         },
         child: Icon(Icons.add),
       ),

@@ -7,12 +7,12 @@ import 'package:provider/provider.dart';
 
 import '../widgets/text_field.dart';
 
-class AddCardPage extends StatefulWidget {
+class AddContactPage extends StatefulWidget {
   @override
-  _AddCardPageState createState() => _AddCardPageState();
+  _AddContactPageState createState() => _AddContactPageState();
 }
 
-class _AddCardPageState extends State<AddCardPage> {
+class _AddContactPageState extends State<AddContactPage> {
   final TextEditingController _contactNameController = TextEditingController();
   final TextEditingController _contactNumController = TextEditingController();
 
