@@ -16,7 +16,7 @@ class ContactProvider with ChangeNotifier {
       UnmodifiableListView(contacts);
 
   void initialState() {
-    syncDataWithProvider();
+    syncData();
   }
 
   void addContact(Contact _contact) {
@@ -37,15 +37,15 @@ class ContactProvider with ChangeNotifier {
 
   Future updateSharedPrefrences() async {
     List<String> setContact =
-        contacts.map((c) => json.encode(c.toJson())).toList();
+        contacts.map((value) => json.encode(value.toJson())).toList();
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    await prefs.setStringList('contact', setContact);
+    await prefs.setStringList('contacts', setContact);
   }
 
-  Future syncDataWithProvider() async {
+  Future syncData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    var result = prefs.getStringList('contact');
+    var result = prefs.getStringList('contacts');
 
     if (result != null) {
       contacts = result.map((c) => Contact.fromJson(json.decode(c))).toList();

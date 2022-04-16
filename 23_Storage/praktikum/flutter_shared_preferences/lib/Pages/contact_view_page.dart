@@ -1,4 +1,3 @@
-import '../Components/contact_view.dart';
 import '../Model/contact_model.dart';
 import '../Providers/contact_provider.dart';
 import 'package:flutter/material.dart';
