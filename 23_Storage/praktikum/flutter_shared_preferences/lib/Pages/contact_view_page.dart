@@ -14,8 +14,8 @@ class ContactViewPage extends StatefulWidget {
 }
 
 class _ContactViewPageState extends State<ContactViewPage> {
-  void onRemove(card) {
-    Provider.of<ContactProvider>(context, listen: false).deleteContact(card);
+  void onRemove(contact) {
+    Provider.of<ContactProvider>(context, listen: false).deleteContact(contact);
     Navigator.of(context).pop(true);
   }
 
@@ -25,7 +25,7 @@ class _ContactViewPageState extends State<ContactViewPage> {
       backgroundColor: Color.fromRGBO(238, 241, 242, 1),
       appBar: AppBar(
         title: const Text(
-          "Card View",
+          "Contact List",
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Color.fromRGBO(238, 241, 242, 1),

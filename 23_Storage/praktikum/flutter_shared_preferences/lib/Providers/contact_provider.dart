@@ -40,12 +40,12 @@ class ContactProvider with ChangeNotifier {
         contacts.map((c) => json.encode(c.toJson())).toList();
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    await prefs.setStringList('cards', setContact);
+    await prefs.setStringList('contact', setContact);
   }
 
   Future syncDataWithProvider() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    var result = prefs.getStringList('cards');
+    var result = prefs.getStringList('contact');
 
     if (result != null) {
       contacts = result.map((c) => Contact.fromJson(json.decode(c))).toList();
