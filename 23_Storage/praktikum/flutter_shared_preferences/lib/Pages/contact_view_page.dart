@@ -24,7 +24,7 @@ class _ContactViewPageState extends State<ContactViewPage> {
       backgroundColor: Color.fromRGBO(238, 241, 242, 1),
       appBar: AppBar(
         title: const Text(
-          "Contact List",
+          "View Contact",
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Color.fromRGBO(238, 241, 242, 1),
