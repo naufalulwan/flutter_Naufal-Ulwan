@@ -109,12 +109,10 @@ class _LoginPageState extends State<LoginPage> {
                       'Login',
                       style: TextStyle(fontSize: 20),
                     ),
-                    onPressed: () {
-                      _emailController.value.text.isNotEmpty &&
-                              _passwordController.value.text.isNotEmpty
-                          ? _submit()
-                          : null;
-                    }),
+                    onPressed: _emailController.value.text.isNotEmpty &&
+                            _passwordController.value.text.isNotEmpty
+                        ? () => _submit()
+                        : null),
               )
             ],
           ),
