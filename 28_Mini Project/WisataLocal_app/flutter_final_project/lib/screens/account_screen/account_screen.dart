@@ -16,7 +16,7 @@ class AccountScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       floatingActionButton: _accountController.userData.value.status == true
           ? FloatingActionButton(
-              backgroundColor: Colors.green,
+              backgroundColor: Colors.greenAccent,
               child: const Icon(
                 Icons.add,
               ),
@@ -44,7 +44,7 @@ class AccountScreen extends StatelessWidget {
       body: Obx(
         () => SizedBox(
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height / 2.6,
+          height: MediaQuery.of(context).size.height / 2.7,
           child: Card(
             elevation: 4,
             child: Column(
@@ -119,24 +119,6 @@ class AccountScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 1.1,
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.yellow)),
-                    child: const Text(
-                      'Edit Profile',
-                      style: TextStyle(color: Colors.black),
-                    ),
-                    onPressed: () {
-                      Get.offNamed(RouteName.editAccountScreen);
-                    },
-                  ),
-                ),
-                const SizedBox(
-                  height: 25,
-                ),
                 Column(
                   children: [
                     const Text('Akun Status :'),
@@ -154,6 +136,24 @@ class AccountScreen extends StatelessWidget {
                                 color: Colors.green),
                           ),
                   ],
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width / 1.1,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.yellow)),
+                    child: const Text(
+                      'Edit Profile',
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    onPressed: () {
+                      Get.offNamed(RouteName.editAccountScreen);
+                    },
+                  ),
                 ),
               ],
             ),

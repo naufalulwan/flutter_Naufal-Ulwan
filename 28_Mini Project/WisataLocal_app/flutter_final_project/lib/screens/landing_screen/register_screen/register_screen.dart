@@ -141,7 +141,7 @@ class RegisterScreen extends StatelessWidget {
                                   .isPasswordHidden2.value,
                               hintText: 'Masukan Password sebelumnya',
                               labelText: 'Ulangi Password',
-                              icon: const Icon(Icons.vpn_key_outlined),
+                              icon: const Icon(Icons.vpn_key_sharp),
                               keyboardType: TextInputType.visiblePassword,
                               onSaved: (value) {
                                 _registrationController.passwordConfirm =

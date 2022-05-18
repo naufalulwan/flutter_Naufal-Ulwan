@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_final_project/constants/routes/route_name.dart';
@@ -126,7 +124,6 @@ class LoginScreen extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
                       onPressed: () {
-                        log(_loginController.isLoading.value.toString());
                         _loginController.isLoading.value
                             ? null
                             : _loginController.login();

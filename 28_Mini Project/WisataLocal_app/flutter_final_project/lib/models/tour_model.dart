@@ -1,25 +1,17 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class TourModel {
   String? uid;
   String? nameTour;
   String? caption;
-  bool? status;
   String? url;
-  String? createdAt;
 
-  TourModel(
-      {this.uid,
-      this.nameTour,
-      this.caption,
-      this.status,
-      this.url,
-      this.createdAt});
+  TourModel({this.uid, this.nameTour, this.caption, this.url});
 
-  factory TourModel.fromJson(Map<String, dynamic> json) => TourModel(
-        uid: json['uid'],
-        nameTour: json['name'],
-        caption: json['caption'],
-        status: json['status'],
-        url: json['url'],
-        createdAt: json['createdAt'],
-      );
+  TourModel.fromJson(Map<String, dynamic> json) {
+    uid = json['uid'];
+    nameTour = json['name'];
+    caption = json['caption'];
+    url = json['url'];
+  }
 }

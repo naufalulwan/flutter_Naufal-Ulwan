@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
@@ -122,11 +120,11 @@ class NavigationDrawerWidget extends StatelessWidget {
       Column(
         children: [
           Container(
-            padding: padding.add(const EdgeInsets.symmetric(vertical: 40)),
+            padding: padding.add(const EdgeInsets.only(top: 60, bottom: 40)),
             child: Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.all(2),
+                  padding: const EdgeInsets.all(1),
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(50)),
                     border: _accountController.userData.value.status == false
@@ -143,18 +141,16 @@ class NavigationDrawerWidget extends StatelessWidget {
                   child: _accountController.userData.value.url == ''
                       ? const CircleAvatar(
                           radius: 35,
-                          backgroundColor: Colors.yellow,
                           backgroundImage:
                               AssetImage('assets/images/people.jpg'),
                         )
                       : CircleAvatar(
                           radius: 35,
-                          backgroundColor: Colors.yellow,
                           backgroundImage: NetworkImage(
                               _accountController.userData.value.url.toString()),
                         ),
                 ),
-                const SizedBox(width: 20),
+                const SizedBox(width: 14),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -186,7 +182,10 @@ class NavigationDrawerWidget extends StatelessWidget {
 
     return ListTile(
       leading: Icon(icon, color: color),
-      title: Text(text, style: const TextStyle(color: color)),
+      title: Text(
+        text,
+        style: const TextStyle(color: color),
+      ),
       hoverColor: hoverColor,
       onTap: onClicked,
     );
@@ -219,6 +218,5 @@ class NavigationDrawerWidget extends StatelessWidget {
         print('tidak');
       }
     });
-    ;
   }
 }

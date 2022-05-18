@@ -28,7 +28,7 @@ class _MainScreenState extends State<MainScreen> {
 
   final _pageOptions = [
     HomePage(),
-    const SearchPage(),
+    SearchPage(),
   ];
 
   void _changeSelectedNavBar(int index) {

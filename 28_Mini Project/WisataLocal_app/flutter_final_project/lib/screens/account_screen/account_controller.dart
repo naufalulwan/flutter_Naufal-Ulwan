@@ -25,6 +25,7 @@ class AccountController extends GetxController {
   var selectedImagePath = ''.obs;
   var selectedImageSize = ''.obs;
   var contributor = false.obs;
+  var isLoading = false.obs;
 
   @override
   void onInit() {
@@ -76,25 +77,26 @@ class AccountController extends GetxController {
 
     try {
       await _storage
-          .ref('uploads/user/profile/$user.uid/$randomStr')
+          .ref('uploads/user/profile/${user?.uid}/$randomStr')
           .putFile(file);
     } on FirebaseException catch (e) {
       snackMessage(e.code.toString());
     }
     String downloadURL = await _storage
-        .ref('uploads/user/profile/$user.uid/$randomStr')
+        .ref('uploads/user/profile/${user?.uid}/$randomStr')
         .getDownloadURL();
 
     return downloadURL;
   }
 
-  void updateProfile() {
+  void updateProfile(String argUrl) {
     if (nameController.text == '') {
       nameController.text = userData.value.name!;
     }
 
     // ignore: unrelated_type_equality_checks
     if (isImgAvailable == true) {
+      isLoading.value = true;
       uploadFile(selectedImagePath.value).then((url) {
         if (url != null) {
           users.doc(user!.uid).update({
@@ -110,6 +112,7 @@ class AccountController extends GetxController {
         } else {
           snackMessage("Image not Uploaded");
         }
+        isLoading.value = false;
       });
     } else {
       users.doc(user!.uid).update({
@@ -118,8 +121,10 @@ class AccountController extends GetxController {
       });
       userData.update((userData) {
         userData!.name = nameController.value.text;
+        userData.url = argUrl == "" ? '' : argUrl;
       });
       snackMessage("Akun profile telah berhasil dirubah");
+      isLoading.value = false;
     }
   }
 
